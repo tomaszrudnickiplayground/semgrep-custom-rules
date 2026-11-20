@@ -1,0 +1,8 @@
+rules:
+  - id: yaml-info-severity
+    languages: [yaml]
+    severity: INFO
+    message: >-
+      Staging test rule (CM-76747): YAML has no extension mapping in ESD, so the tenant counts as having a
+      language-agnostic rule and every scanner runs. Matches each "severity: INFO" line in this repo's rules.
+    pattern: "severity: INFO"
