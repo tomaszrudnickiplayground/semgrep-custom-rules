@@ -1,0 +1,8 @@
+rules:
+  - id: generic-findings-total
+    languages: [generic]
+    severity: INFO
+    message: >-
+      Staging test rule (CM-76747): language-agnostic, so Semgrep counts every zipped file. Matches the
+      "Total: N findings" line in c-sast-playground/README.md.
+    pattern: "Total: $N findings"

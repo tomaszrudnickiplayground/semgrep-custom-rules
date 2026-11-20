@@ -1,0 +1,8 @@
+rules:
+  - id: js-express-app-listen
+    languages: [javascript]
+    severity: INFO
+    message: >-
+      Staging test rule (CM-76747): an Express app listens on a hard-coded port. Matches
+      js-sast-playground/src/app.js once.
+    pattern: $APP.listen($PORT)
